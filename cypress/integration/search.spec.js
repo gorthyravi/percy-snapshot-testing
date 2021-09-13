@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 import '@percy/cypress'
 
-context('Visual Testing', () => {
+context('Visual Testing on Google Image search', () => {
   beforeEach(() => {
     cy.visit('https://www.google.com/imghp?hl=en')
   })
 
-  it('Results Screenshot 1', () => {
+  it('First Snapshot', () => {
     // https://on.cypress.io/type
     cy.get('.tsf').within(() => {
       cy.get('input:first')
@@ -23,7 +23,7 @@ context('Visual Testing', () => {
     })
   })
 
-  it('Results Screenshot 2', () => {
+  it('Second Snapshot', () => {
     // https://on.cypress.io/type
     cy.get('.tsf').within(() => {
       cy.get('input:first')
